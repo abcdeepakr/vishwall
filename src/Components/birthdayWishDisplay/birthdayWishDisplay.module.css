@@ -1,0 +1,49 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+}
+
+.WishContainer {
+  width: 40%;
+  padding: 3%;
+  height: auto;
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 10px grey;
+  color: black;
+  font-size: 28px;
+  font-family: "Kalam", cursive;
+}
+
+Body {
+  color: white;
+}
+.Static {
+  position: absolute;
+  right: 0%;
+  float: right;
+  width: 35%;
+  height: 100%;
+  padding: 5%;
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 10px grey;
+  color: black;
+  font-size: 28px;
+  font-family: "Pangolin", cursive;
+}
+
+@media (max-width: 450px) {
+  .Static {
+    position: relative;
+    width: 80%;
+    height: auto;
+    font-size: 16px;
+  }
+  .WishContainer {
+    width: 80%;
+    font-size: 18px;
+  }
+}

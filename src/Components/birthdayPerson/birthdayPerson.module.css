@@ -1,0 +1,81 @@
+.Label {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  color: #111;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  float: left;
+}
+
+.Name {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 32px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.Name:focus {
+  outline: none;
+}
+
+.Button {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white; /* Green */
+  border: none;
+  color: #03256c;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 4%;
+  border-radius: 10px;
+}
+.Button:hover {
+  background-color: skyblue;
+  transition: 0.2s;
+}
+.Button:active {
+  background-color: tomato;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(-45deg, #03256c, #810034, #00005c, #23d5ab);
+  background-size: 1000%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

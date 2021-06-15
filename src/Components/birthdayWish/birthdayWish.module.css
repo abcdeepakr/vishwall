@@ -1,0 +1,88 @@
+.Name {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 40%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 32px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.Name:focus {
+  outline: none;
+}
+
+.Wish {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 40%;
+  border-radius: 10px;
+  box-shadow: 2px 3px 10px white;
+  font-size: 28px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.Wish:focus {
+  outline: none;
+}
+
+.SubmitConfirmation {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 20%;
+  padding: 12px 20px;
+  display: inline-block;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.Button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  align-content: center;
+  background-color: #00005c; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 0.1px solid white;
+}
+.Button:hover {
+  background-color: #621055;
+  transition: 0.2s;
+}
+.Button:active {
+  background-color: tomato;
+}
+
+@media (max-width: 400px) {
+  .Name {
+    width: 80%;
+  }
+  .Wish {
+    font-size: 22px;
+  }
+  .Button {
+    font-size: 22px;
+  }
+  .SubmitConfirmation {
+    width: 70%;
+  }
+}
