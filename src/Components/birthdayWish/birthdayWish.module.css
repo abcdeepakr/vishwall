@@ -86,3 +86,17 @@
     width: 70%;
   }
 }
+@media (max-width: 700px) {
+  .Name {
+    width: 80%;
+  }
+  .Wish {
+    font-size: 22px;
+  }
+  .Button {
+    font-size: 22px;
+  }
+  .SubmitConfirmation {
+    width: 70%;
+  }
+}

@@ -21,10 +21,9 @@ const BirthdayPerson = (props) =>{
         buttonDisabled = false
         bgColor = "white"
     }
-    
     return (
         <div>
-            <label className= {classes.Label}>Whose Birthday? Enter their Instagram username</label>
+            <label className= {classes.Label}>Whose Birthday? <br />Enter their Instagram username</label>
             <input 
                 type = "input" 
                 placeholder = "Name" 
@@ -42,6 +41,14 @@ const BirthdayPerson = (props) =>{
                     disabled = {buttonDisabled}
                     style = {{backgroundColor : bgColor}}
                     >Enter</button></Link>
+            <Link to ={`/vishwall/${input}/wishes`} >
+                <button 
+                    className={classes.ButtonWishes} 
+                    type="button" 
+                    onClick ={onClickHandler} 
+                    disabled = {buttonDisabled}
+                    style = {{backgroundColor : bgColor}}
+                    >See Wishes</button></Link>
         </div>
     )
 }

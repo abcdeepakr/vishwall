@@ -9,13 +9,14 @@ import BirthdayWishDisplay from './Components/birthdayWishDisplay/birthdayWishDi
 import Error from './Components/Error/Error'
 
 const App = (props) => {
-
+  
   return (
     <div className="App"> 
       <Switch>
         <Route path = '/vishwall' exact component = {BirthdayPerson} />
         <Route path = {`/vishwall/:${props.username}/write-wish`} exact component = {BirthdayWish} />
         <Route path = {`/vishwall/:${props.username}/wishes`} exact component = {BirthdayWishDisplay}/>
+        {console.log(props)}
         <Route component = {Error}/>
       </Switch>
     </div>
