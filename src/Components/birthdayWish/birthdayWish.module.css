@@ -72,7 +72,7 @@
   background-color: tomato;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .Name {
     width: 80%;
   }

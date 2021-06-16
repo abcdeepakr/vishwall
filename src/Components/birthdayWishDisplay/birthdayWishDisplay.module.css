@@ -24,7 +24,7 @@ Body {
   right: 0%;
   float: right;
   width: 35%;
-  height: 100%;
+  height: auto;
   padding: 5%;
   background-color: white;
   margin: 20px;

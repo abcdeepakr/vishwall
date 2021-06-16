@@ -13,11 +13,11 @@ const App = (props) => {
   return (
     <div className="App"> 
       <Switch>
-        <Route path = '/' exact component = {BirthdayPerson} />
-        <Route path = {`/:${props.username}/wishes`} exact component = {BirthdayWishDisplay}/>
-        <Route path = {`/:${props.username}/write-wish`} exact component = {BirthdayWish} />
+        <Route path = '/vishwall' exact component = {BirthdayPerson} />
+        <Route path = {`/vishwall/:${props.username}/write-wish`} exact component = {BirthdayWish} />
+        <Route path = {`/vishwall/:${props.username}/wishes`} exact component = {BirthdayWishDisplay}/>
         <Route component = {Error}/>
-   </Switch>
+      </Switch>
     </div>
 
     

@@ -89,7 +89,7 @@ const BirthdayWish = (props) =>{
                 placeholder ="type Y to send your wish"
                 className = {classes.SubmitConfirmation}
                 />
-            <Link to = {`/${props.userName}/wishes`}>
+            <Link to = {`/vishwall/${props.userName}/wishes`}>
                 <button 
                     className = {classes.Button} 
                     onClick = {onSubmitHandler}>

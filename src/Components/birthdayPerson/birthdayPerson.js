@@ -34,7 +34,7 @@ const BirthdayPerson = (props) =>{
                 ></input>
             <br></br>
             
-            <Link to ={`/${input}/write-wish`} >
+            <Link to ={`/vishwall/${input}/write-wish`} >
                 <button 
                     className={classes.Button} 
                     type="button" 
