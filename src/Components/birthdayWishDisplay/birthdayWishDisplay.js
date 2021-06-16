@@ -5,11 +5,15 @@ import {useHarperDB} from 'use-harperdb'
 import classes from './birthdayWishDisplay.module.css'
 
 const BirthdayWishDisplay = (props) =>{
+
+    console.log("PROPS : " , props)
+    let url = props.match.url.split('')///vishwall/snehajsjm1/wishes
+    let receiver = url.slice(10,url.lastIndexOf('/')).join('')
     // eslint-disable-next-line
     const [data,loading,error,refresh] = useHarperDB({
         query : {
             operation : 'sql',
-            sql :  `select * from project.birthday where receiver = "${props.match.params.undefined}" and sender<>"" `
+            sql :  `select * from project.birthday where receiver = "${receiver}" and sender<>"" `
         }
     })
     let wishes = ""
@@ -30,7 +34,7 @@ const BirthdayWishDisplay = (props) =>{
         wishes = ""
     }
     console.log( "[ERROR] : " ,error)
-    console.log("[FETCHED DATA : ]" ,data)
+    
     return (
         <div>
             {wishes ? <h1>Happy Birthday {props.match.params.undefined} Your friends have sent some lovely wishes</h1> :
