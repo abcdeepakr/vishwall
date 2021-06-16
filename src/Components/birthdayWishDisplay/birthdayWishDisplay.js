@@ -29,8 +29,7 @@ const BirthdayWishDisplay = (props) =>{
     else{
         wishes = ""
     }
-    console.log(data)
-    console.log("[ERROR : ]"+ error)
+    console.log(props)
     return (
         <div>
             {wishes ? <h1>Happy Birthday {props.match.params.undefined} Your friends have sent some lovely wishes</h1> :
