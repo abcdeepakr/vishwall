@@ -2,12 +2,12 @@
   width: auto;
   margin-top: 2%;
   height: 500px;
+  background-color: white;
 }
 
-@media (min-width: 375px) and(max-width : 500px) {
+@media (min-width: 374px) and (max-width: 500px) {
   .Img {
-    width: 100%;
-    margin-top: 50%;
     height: auto;
+    width: 100%;
   }
 }
