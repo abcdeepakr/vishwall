@@ -7,7 +7,7 @@ const About = () =>{
     return (
         <div >
             <h1 className = {classes.Header}>VISHWALL 💫</h1>
-            <h3 className = {classes.Tag}>A wall where you post your wishes</h3>
+            <h3 className = {classes.Tag}>Gift your friends a wall full of wishes</h3>
                 <div className = {classes.Content}>
 
                 
@@ -27,7 +27,8 @@ const About = () =>{
                             <li>Which will take them to the next page which will have link that will look like this <strong><code>/vishwall/username/write-wish</code></strong></li>
                             <li>This link can be shared with other mutual friends who can send their send their wishes using this link</li>
                             <li>Once sent, you can see all the wishes on a link which will look like this <strong><code>/vishwall/username/wishes</code></strong></li>
-                            <li>To surprise the Birthday Person you can send them this link. I guess it will be be a nice and heartwarming moment, which is not something most of us are used to in the Pandemic.</li> 
+                            <li>To surprise the Birthday Person you can send them this link. I guess it will be be a nice and heartwarming moment, which is always great especially in a Pandemic</li> 
+                            <li>Bonus : Good replacement of an awkward birthday group call</li> 
                         </ul>
                     
                 </div>

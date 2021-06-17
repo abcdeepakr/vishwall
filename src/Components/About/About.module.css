@@ -40,3 +40,32 @@
   font-weight: 500;
   border-radius: 10px;
 }
+
+@media (min-width: 374px) and (max-width: 470px) {
+  .Header {
+    font-size: 36px;
+  }
+  .Tag {
+    font-size: 32px;
+    font-family: "Lato", sans-serif;
+    /* color: black; */
+  }
+
+  .SubContent1 {
+    width: 100%;
+    color: black;
+    font-size: 22px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #bce6eb;
+  }
+  .SubContent1 > h3 {
+    font-size: 32px;
+  }
+  .SubContent1 > ul > li {
+    margin-bottom: 10px;
+    text-align: left;
+    text-indent: 0%;
+  }
+}
