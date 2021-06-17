@@ -45,7 +45,7 @@ const BirthdayWish = (props) =>{
                 url: 'https://wishmeluck-deepak.harperdbcloud.com',
                 headers: { 
                     'Content-Type': 'application/json', 
-                    'Authorization': 'Basic ZGVlcGFrcmF3YXQ6bHVja3lsdWNrMTIz'
+                    'Authorization': `Basic ${process.env.REACT_APP_AUTHORIZATION}`
                 },
                 data : data
                 };
