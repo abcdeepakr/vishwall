@@ -23,7 +23,7 @@ const BirthdayPerson = (props) =>{
     }
     return (
         <div>
-            <label className= {classes.Label}>Whose Birthday? <br />Enter their Instagram username</label>
+            <label className= {classes.Label}>Whose Birthday? <br />Enter their Instagram</label>
             <input 
                 type = "input" 
                 placeholder = "Name" 
