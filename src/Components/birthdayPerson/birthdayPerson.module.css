@@ -139,6 +139,7 @@ body {
     position: fixed;
     right: 5px;
     margin-top: 5px;
+    font-size: 22px;
   }
   .Label {
     font-size: 32px;
