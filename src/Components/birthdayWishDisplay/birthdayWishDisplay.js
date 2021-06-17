@@ -6,7 +6,6 @@ import classes from './birthdayWishDisplay.module.css'
 
 const BirthdayWishDisplay = (props) =>{
 
-    console.log("PROPS : " , props)
     let url = props.match.url.split('')
     let receiver = url.slice(10,url.lastIndexOf('/')).join('')
     // eslint-disable-next-line
@@ -24,8 +23,8 @@ const BirthdayWishDisplay = (props) =>{
         wishes = (data.map((item,index) =>{
             return (
                 <div key ={index} className = {classes.WishContainer}>
-                    <h3>from: {item.sender}</h3>
-                    <h3>Wish: {item.wish}</h3>
+                    <h3>From: {item.sender}</h3>
+                    <h3>{item.wish}</h3>
                 </div>
             )
         }))
@@ -60,7 +59,7 @@ const BirthdayWishDisplay = (props) =>{
                                             and don't forget to end your night with some of the cheer.<br />
                                             As your night ends I hope you remember that I stopped to say,<br />
                                             that I hope that you have a very happy birthday!<br /><br /><br />
-                                            <i style = {{color : "grey"}}>by Kelly Levi</i>        
+                                            <i style = {{color : "white"}}>by Kelly Levi</i>        
                                     </div>
                 {wishes}
                 

@@ -86,7 +86,7 @@ const BirthdayWish = (props) =>{
                 onChange ={event => onSubmitHandler(event)} 
                 required 
                 maxLength="1" 
-                placeholder ="type Y to send your wish"
+                placeholder ="Type 1 to send your wish"
                 className = {classes.SubmitConfirmation}
                 />
             <Link to = {`/vishwall/${props.userName}/wishes`}>

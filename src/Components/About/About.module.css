@@ -1,0 +1,42 @@
+.Header {
+  font-size: 44px;
+  font-family: "Lato", sans-serif;
+}
+.Tag {
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  /* color: black; */
+}
+.Content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.SubContent1 {
+  background-color: #fceef5;
+  width: 60%;
+  color: black;
+  font-size: 28px;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #bce6eb;
+}
+.SubContent1 > h3 {
+  font-size: 40px;
+}
+.SubContent1 > ul > li {
+  padding: 10px;
+}
+.HomeButton {
+  background-color: white; /* Green */
+  color: #03256c;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 10px;
+}

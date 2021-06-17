@@ -6,11 +6,10 @@ import classes from './Error.module.css'
 const Error = () =>{
     return(
         <div>
-            <h2>404 ji, page not found</h2>
+            <h1>404 😞</h1>
             <img src ={errorImage} alt = "error" className ={classes.Img} ></img>
-            <h3 style = {{color: 'grey'}}>Error page, take me <Link to = '/vishwall' style = {{color : "white", stroke:"black"}}> <strong>home</strong></Link>, to the place, I belonnnnnggggggg</h3>
+            <h2 style = {{color: 'white'}}><Link to = '/vishwall' style = {{color : "yellow", stroke:"black"}}> <h1>HOME 🏠</h1></Link></h2>
         </div>
     )
 }
-
 export default Error

@@ -27,6 +27,8 @@
   box-shadow: 2px 3px 10px white;
   font-size: 28px;
   font-family: "Nunito Sans", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .Wish:focus {
   outline: none;
