@@ -7,7 +7,7 @@ import classes from './birthdayWishDisplay.module.css'
 const BirthdayWishDisplay = (props) =>{
 
     console.log("PROPS : " , props)
-    let url = props.match.url.split('')///vishwall/snehajsjm1/wishes
+    let url = props.match.url.split('')
     let receiver = url.slice(10,url.lastIndexOf('/')).join('')
     // eslint-disable-next-line
     const [data,loading,error,refresh] = useHarperDB({
