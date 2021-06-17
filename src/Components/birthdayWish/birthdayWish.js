@@ -10,7 +10,7 @@ const BirthdayWish = (props) =>{
     //hooks
     let [name,setInputName] = useState('')
     let [wish,setInputWish] = useState('')
-    let [submit, setSubmit] = useState('')
+    let [submit, setSubmit] = useState(false)
 
     const onNameChangeHandler = (event) =>{
         setInputName(event.target.value)
@@ -18,8 +18,8 @@ const BirthdayWish = (props) =>{
     const onWishChangeHandler = (event) =>{
         setInputWish(event.target.value)
     }
-    const onSubmitHandler = (event) =>{
-        setSubmit(event.target.value)
+    const onSubmitHandler = () =>{
+        setSubmit(!submit)
         props.onDynamicVisit(props.match.params.undefined)
     }
 
@@ -63,9 +63,17 @@ const BirthdayWish = (props) =>{
     return () => clearTimeout(timer);
     // eslint-disable-next-line
       }, [submit]);
+
+    let disabledButtonColor = ""
+    if(!submit){
+        disabledButtonColor = "grey"
+    }
     
     return (
         <div>
+            <h4 style ={{marginTop : "0px"}}>
+                Enter your Name and wish - Click Confirm Wish - Click Submit
+            </h4>
             <input 
                 className = {classes.Name} 
                 type = "text" 
@@ -80,21 +88,27 @@ const BirthdayWish = (props) =>{
                 onChange = {event =>onWishChangeHandler(event)}
                 >
             </textarea>
-
-            <input 
-                type = "text" 
-                onChange ={event => onSubmitHandler(event)} 
-                required 
-                maxLength="1" 
-                placeholder ="Type 1 to send your wish"
-                className = {classes.SubmitConfirmation}
-                />
+            
+            {submit ? <button onClick ={() =>onSubmitHandler()} style = {{backgroundColor : disabledButtonColor}} className={classes.ConfirmButton} disabled >Confirm Wish</button>:
+                      <button onClick ={() =>onSubmitHandler()} className={classes.ConfirmButton} >Confirm</button>}
+            
             <Link to = {`/vishwall/${props.userName}/wishes`}>
-                <button 
+                {submit ? <button 
                     className = {classes.Button} 
-                    onClick = {onSubmitHandler}>
+                    onClick = {() => onSubmitHandler()}
+                    >
                     Submit Wish
-                </button>
+                </button> : 
+                <button 
+                style = {{backgroundColor : disabledButtonColor}}
+                disabled
+                className = {classes.Button} 
+                onClick = {() => onSubmitHandler()}
+                >
+                Submit Wish
+            </button>
+                }
+                
             </Link>
         </div>
     )

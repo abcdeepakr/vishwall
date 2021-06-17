@@ -6,13 +6,13 @@ import classes from './birthdayWishDisplay.module.css'
 
 const BirthdayWishDisplay = (props) =>{
 
-    let url = props.match.url.split('')
-    let receiver = url.slice(10,url.lastIndexOf('/')).join('')
+    // let url = props.match.url.split('')
+    // let receiver = url.slice(10,url.lastIndexOf('/')).join('')
     // eslint-disable-next-line
     const [data,loading,error,refresh] = useHarperDB({
         query : {
             operation : 'sql',
-            sql :  `select * from project.birthday where receiver = "${receiver}" and sender<>"" `
+            sql :  `select * from project.birthday where receiver = "${props.match.params.undefined}" and sender<>"" `
         }
     })
     let wishes = ""

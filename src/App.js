@@ -17,7 +17,6 @@ const App = (props) => {
         <Route path = '/vishwall/about' exact component = {About} />
         <Route path = {`/vishwall/:${props.username}/write-wish`} exact component = {BirthdayWish} />
         <Route path = {`/vishwall/:${props.username}/wishes`} exact component = {BirthdayWishDisplay}/>
-        {console.log(props)}
         <Route component = {Error}/>
       </Switch>
     </div>
