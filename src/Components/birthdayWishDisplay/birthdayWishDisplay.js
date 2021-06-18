@@ -12,7 +12,7 @@ const BirthdayWishDisplay = (props) =>{
     const [data,loading,error,refresh] = useHarperDB({
         query : {
             operation : 'sql',
-            sql :  `select * from project.birthday where receiver = "${props.match.params.undefined}" and sender<>"" `
+            sql :  `select * from project.birthday where receiver = "${props.match.params.undefined}" and wish<>"" `
         }
     })
     let wishes = ""
