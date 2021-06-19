@@ -77,7 +77,7 @@ const BirthdayWish = (props) =>{
             <input 
                 className = {classes.Name} 
                 type = "text" 
-                placeholder = "Enter your name"
+                placeholder = "Enter your Name/Nickname/Anonymous"
                 onChange = {event =>onNameChangeHandler(event)}
                 >
             </input> 
