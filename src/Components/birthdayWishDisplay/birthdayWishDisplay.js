@@ -24,7 +24,7 @@ const BirthdayWishDisplay = (props) =>{
             return (
                 <div key ={index} className = {classes.WishContainer}>
                     <h3>From: {item.sender}</h3>
-                    <h3>{item.wish}</h3>
+                    <h3>Wish :{item.wish}</h3>
                 </div>
             )
         }))
