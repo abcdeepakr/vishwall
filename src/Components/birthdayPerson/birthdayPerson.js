@@ -24,7 +24,7 @@ const BirthdayPerson = (props) =>{
     return (
         <div>
             <Link to ={`/vishwall/about`} ><h3 className ={classes.About}>How to use?</h3></Link>
-            <label className= {classes.Label}>Whose Birthday? <br />Enter their Instagram</label>
+            <label className= {classes.Label}>Whose Birthday? <br />Enter their name</label>
             <input 
                 type = "input" 
                 placeholder = "Name" 

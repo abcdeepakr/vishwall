@@ -17,8 +17,8 @@
 }
 
 .Wish {
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
@@ -36,7 +36,7 @@
 
 .Button {
   position: absolute;
-  top: 90%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, 0%);
   align-content: center;
@@ -61,7 +61,7 @@
 }
 .ConfirmButton {
   position: absolute;
-  top: 80%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, 0%);
   align-content: center;

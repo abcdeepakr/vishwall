@@ -72,7 +72,7 @@ const BirthdayWish = (props) =>{
     return (
         <div>
             <h4 style ={{marginTop : "0px"}}>
-                Enter your Name and wish - Click Confirm Wish - Click Submit
+                *Share this link with other friends.<br />
             </h4>
             <input 
                 className = {classes.Name} 
