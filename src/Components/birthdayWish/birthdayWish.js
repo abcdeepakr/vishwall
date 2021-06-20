@@ -72,7 +72,7 @@ const BirthdayWish = (props) =>{
     return (
         <div>
             <h4 style ={{marginTop : "0px"}}>
-                *Share this link with other friends.<br />
+                *Gather wishes for <strong style = {{color :"yellow"}}>{props.match.params.undefined}</strong> by sharing this link with other friends.<br />
             </h4>
             <input 
                 className = {classes.Name} 
