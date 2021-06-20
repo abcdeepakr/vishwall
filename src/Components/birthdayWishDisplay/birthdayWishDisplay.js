@@ -36,7 +36,6 @@ const BirthdayWishDisplay = (props) =>{
     
     return (
         <div>
-            <h2>Surprise <strong style = {{color : "yellow"}}>{props.match.params.undefined}</strong> with this wall full of wishes.</h2>
             {wishes ? <h1>Happy Birthday {props.match.params.undefined} Your friends have sent some lovely wishes</h1> :
                       <h1>Happy Birthday {props.match.params.undefined}, Have a blast</h1> }
             
