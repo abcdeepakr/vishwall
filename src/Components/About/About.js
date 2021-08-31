@@ -24,11 +24,11 @@ const About = () =>{
                     
                         <ul >
                             <li>A person enters the Instagram username or any unique name for the person on the home page.</li>
-                            <li>Which will take them to the next page which will have link that will look like this <strong><code>/vishwall/username/write-wish</code></strong></li>
+                            <li>Which will take them to the next page which will have route that will look like this <strong><code>/vishwall/username/write-wish</code></strong></li>
                             <li>This link can be shared with other mutual friends who can send their send their wishes using this link</li>
-                            <li>Once sent, you can see all the wishes on a link which will look like this <strong><code>/vishwall/username/wishes</code></strong></li>
+                            <li>Once sent, you can see all the wishes on a route which will look like this <strong><code>/vishwall/username/wishes</code></strong></li>
                             <li>To surprise the Birthday Person you can send them this link. I guess it will be be a nice and heartwarming moment, which is always great especially in a Pandemic</li> 
-                            <li>Bonus : Good replacement of an awkward birthday group call</li> 
+                            <li>Bonus : Good replacement of an awkward birthday-group-call</li> 
                         </ul>
                     
                 </div>
